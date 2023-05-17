@@ -1,0 +1,43 @@
+<!-- HTML contact form -->
+<form id="contact-form">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    <br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <br>
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" required></textarea>
+    <br>
+    <button type="submit" id="send-btn">Send</button>
+  </form>
+  
+  <script>
+    // Get the form element
+    const form = document.getElementById("contact-form");
+  
+    // Add an event listener to the form's submit button
+    form.addEventListener("submit", function(event) {
+      // Prevent the default form submission
+      event.preventDefault();
+  
+      // Get the user's input from the form fields
+      const name = form.elements["name"].value;
+      const email = form.elements["email"].value;
+      const message = form.elements["message"].value;
+  
+      // Compose the email message
+      const subject = "New message from " + name;
+      const body = "Email: " + email + "\n\n" + message;
+  
+      // Construct the mailto URL with the email address, subject, and body
+      const mailtoUrl = "mailto:bjwill94@gmail.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+  
+      // Open the user's default email client with the mailto URL
+      window.location.href = mailtoUrl;
+  
+      // Clear the form fields after submission
+      form.reset();
+    });
+  </script>
+  
