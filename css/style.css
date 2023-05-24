@@ -4543,7 +4543,7 @@ input[type="button"].btn-block {
   padding-top: 0.1125rem;
   padding-bottom: 0.3125rem;
   margin-right: 1rem;
-  font-size: 1.00rem;
+  font-size: 1rem;
   line-height: inherit;
   white-space: nowrap;
 }
@@ -10641,14 +10641,19 @@ h5,
   background: #184699b0;
   color: #fff;
 }
-@media (max-width: 991.98px) {
+/* @media (max-width: 991.98px) {
   .ftco-navbar-light .navbar-nav > .nav-item .dropdown-menu {
     display: block !important;
     background: #fff;
     -webkit-box-shadow: none;
     box-shadow: none;
   }
+} */
+
+.display-none {
+  display: none !important;
 }
+
 .ftco-navbar-light .navbar-nav > .nav-item.cta > a {
   color: #fff;
   background: #184699b0;
