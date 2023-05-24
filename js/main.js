@@ -123,6 +123,7 @@
   $(function () {
     $("#servicesDropdown").on("click", function (event) {
       if ($(window).width() < 991) {
+        console.log("asd");
         console.log($("#dropdownItem").attr("class"));
         console.log($("#dropdownmenu").attr("class"));
         $("#dropdownItem").toggleClass("show");
