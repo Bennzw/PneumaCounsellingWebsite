@@ -127,20 +127,28 @@
         console.log($("#dropdownmenu").attr("class"));
         $("#dropdownItem").toggleClass("show");
         $("#dropdownmenu").toggleClass("show");
-        // if (
-        //   $("#dropdownItem").hasClass("show") &&
-        //   $("#dropdownmenu").hasClass("show")
-        // ) {
-        //   console.log("first");
-        //   $("#dropdownItem").removeClass("show");
-        //   $("#dropdownmenu").removeClass("show");
-        // } else {
-        //   console.log("tess");
-        //   $("#dropdownmenu").addClass("show");
-        //   $("#dropdownItem").addClass("show");
-        // }
       }
 
+      event.preventDefault();
+    });
+  });
+
+  $(function () {
+    $(".nav-link").on("click", function (event) {
+      console.log(find(".navbar-toggler"));
+      $(".nav-item.active").removeClass("active");
+      $(this).find(".nav-item.active").removeClass("active");
+      $(this.parentNode).addClass("active");
+      console.log($(this).attr("href"));
+      window.location.href = $(this).attr("href");
+      event.preventDefault();
+    });
+  });
+
+  $(function () {
+    $("#book-now").on("click", function (event) {
+      var newUrl = "https://www.pneumacounseling.ca/Contact.html";
+      window.location.href = newUrl;
       event.preventDefault();
     });
   });

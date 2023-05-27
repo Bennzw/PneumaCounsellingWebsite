@@ -3430,7 +3430,7 @@ input[type="button"].btn-block {
   }
 }
 
-@media (min-width: 330px) and (max-width: 680px) {
+@media (min-width: 300px) and (max-width: 680px) {
   .img-style {
     width: 100px !important;
     height: 130px !important;
