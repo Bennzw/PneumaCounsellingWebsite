@@ -1166,8 +1166,8 @@ pre code {
   .col-md-3 {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 25%;
-    flex: 0 0 25%;
-    max-width: 25%;
+    flex: 1 0 50%;
+    max-width: 50%;
   }
   .col-md-4 {
     -webkit-box-flex: 0;
@@ -1185,7 +1185,7 @@ pre code {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
-    max-width: 50%;
+    max-width: 33%;
   }
   .col-md-7 {
     -webkit-box-flex: 0;
@@ -1387,6 +1387,9 @@ pre code {
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
     max-width: 50%;
+  }
+  .block-7 {
+    min-height: 445px !important;
   }
   .col-lg-7 {
     -webkit-box-flex: 0;
@@ -3404,6 +3407,49 @@ input[type="button"].btn-block {
   .dropdown-menu-md-right {
     right: 0;
     left: auto;
+  }
+}
+
+@media (min-width: 200px) and (max-width: 450px) {
+  .img-style {
+    width: 112px !important;
+    height: 140px !important;
+    top: -20% !important;
+    left: -9% !important;
+  }
+  .image-logo-crop {
+    width: 64px !important;
+    height: 66px !important;
+  }
+  .ftco-navbar-light .navbar-brand {
+    font-size: 17px !important;
+    margin-bottom: 0px !important;
+  }
+  .logo-name-wrap {
+    width: 272px !important;
+  }
+}
+
+@media (min-width: 330px) and (max-width: 680px) {
+  .img-style {
+    width: 100px !important;
+    height: 130px !important;
+    top: -20% !important;
+    left: -9% !important;
+  }
+  .image-logo-crop {
+    width: 64px !important;
+    height: 66px !important;
+  }
+  .ftco-navbar-light .navbar-brand {
+    font-size: 15px !important;
+    margin-bottom: 0px !important;
+  }
+  .logo-name-wrap {
+    width: 244px !important;
+  }
+  .block-7 {
+    min-height: 485px !important;
   }
 }
 
@@ -11591,6 +11637,7 @@ textarea.form-control {
 @media (max-width: 991.98px) {
   .block-7 {
     margin-top: 30px;
+    min-height: 575px;
   }
 }
 .block-7 .heading-2 {
