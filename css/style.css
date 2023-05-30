@@ -1135,6 +1135,12 @@ pre code {
   }
 }
 
+@media (min-width: 980px) {
+  .check-resize {
+    max-width: 33% !important;
+  }
+}
+
 @media (min-width: 768px) {
   .col-md {
     -ms-flex-preferred-size: 0;

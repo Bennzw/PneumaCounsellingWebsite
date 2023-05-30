@@ -305,12 +305,15 @@ connected.
               </div>
             </div>
           </div>
-          <div class="col-md-3 py-md-5 py-4 aside-stretch-right pl-lg-5">
+          <div
+            class="col-md-3 py-md-5 py-4 aside-stretch-right pl-lg-5 check-resize"
+          >
             <h2 class="footer-heading">Free consultation</h2>
             <form action="#" class="form-consultation">
               <div class="form-group">
                 <input
                   type="text"
+                  name="name"
                   class="form-control"
                   placeholder="Your Name"
                 />
@@ -319,11 +322,9 @@ connected.
                 <input
                   type="text"
                   class="form-control"
+                  name="email"
                   placeholder="Your Email"
                 />
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Subject" />
               </div>
               <div class="form-group">
                 <textarea
@@ -331,6 +332,7 @@ connected.
                   id=""
                   cols="30"
                   rows="3"
+                  name="message"
                   class="form-control"
                   placeholder="Message"
                 ></textarea>
